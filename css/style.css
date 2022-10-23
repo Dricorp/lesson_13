@@ -47,7 +47,7 @@ body {
 }
 .car-body__item::after {
 	content: "";
-	background: url("/img/wheel.png") 0 0 / cover no-repeat;
+	background: url("./img/wheel.png") 0 0 / cover no-repeat;
 	height: 110px;
 	width: 110px;
 	position: absolute;
@@ -61,7 +61,7 @@ body {
 }
 .car-body__item::before {
 	content: "";
-	background: url("/img/wheel.png") 0 0 / cover no-repeat;
+	background: url("./img/wheel.png") 0 0 / cover no-repeat;
 	height: 110px;
 	width: 110px;
 	position: absolute;
@@ -91,7 +91,7 @@ body {
 }
 .car-body__door::after {
 	content: "";
-	background: url("/img/door.png") 0 0 / cover no-repeat;
+	background: url("./img/door.png") 0 0 / cover no-repeat;
 	height: 162px;
 	width: 218px;
 	position: absolute;
@@ -118,7 +118,7 @@ body {
 }
 .car-body__son {
 	content: "";
-	background: url("/img/son-2.png") 0 0 / cover no-repeat;
+	background: url("./img/son-2.png") 0 0 / cover no-repeat;
 	height: 140px;
 	width: 40px;
 	position: absolute;
@@ -179,7 +179,7 @@ body {
 
 .car__moon::after {
 	content: "";
-	background: url("/img/moon.png") 0 0 / cover no-repeat;
+	background: url("./img/moon.png") 0 0 / cover no-repeat;
 	position: absolute;
 	left: 700px;
 	top: 50px;
