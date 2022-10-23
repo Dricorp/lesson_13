@@ -47,7 +47,7 @@ body {
 }
 .car-body__item::after {
 	content: "";
-	background: url("./img/wheel.png") 0 0 / cover no-repeat;
+	background: url("../img/wheel.png") 0 0 / cover no-repeat;
 	height: 110px;
 	width: 110px;
 	position: absolute;
