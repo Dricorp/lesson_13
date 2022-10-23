@@ -25,7 +25,7 @@ body {
 	animation-timing-function: linear;
 	z-index: 2;
 }
-
+/*
 @keyframes car-moov {
 	0% {
 		transform: translate(1500px, 0);
@@ -33,7 +33,7 @@ body {
 	100% {
 		transform: translate(-1400px, 0);
 	}
-}
+}*/
 .car-body:hover {
 	animation-play-state: paused;
 }
@@ -48,11 +48,11 @@ body {
 .car-body__item::after {
 	content: "";
 	background: url("../img/wheel.png") 0 0 / cover no-repeat;
-	height: 110px;
-	width: 110px;
+	height: 120px;
+	width: 120px;
 	position: absolute;
-	top: 110px;
-	left: 60px;
+	top: 124px;
+	left: 64px;
 	z-index: 5;
 	animation-name: wheel-rotate;
 	animation-duration: 2s;
@@ -62,11 +62,11 @@ body {
 .car-body__item::before {
 	content: "";
 	background: url("../img/wheel.png") 0 0 / cover no-repeat;
-	height: 110px;
-	width: 110px;
+	height: 120px;
+	width: 120px;
 	position: absolute;
-	top: 110px;
-	left: 475px;
+	top: 124px;
+	left: 528px;
 	z-index: 5;
 	animation-name: wheel-rotate;
 	animation-duration: 2s;
@@ -92,11 +92,11 @@ body {
 .car-body__door::after {
 	content: "";
 	background: url("../img/door.png") 0 0 / cover no-repeat;
-	height: 162px;
-	width: 218px;
+	height: 180px;
+	width: 235px;
 	position: absolute;
-	top: 8px;
-	left: 205px;
+	top: 9px;
+	left: 230px;
 	z-index: 3;
 	transform: rotate(-0deg);
 }
@@ -107,11 +107,11 @@ body {
 .car-body__salon {
 	content: "";
 	background: url("../img/salon.png") 0 0 / cover no-repeat;
-	height: 200px;
-	width: 220px;
+	height: 250px;
+	width: 300px;
 	position: absolute;
-	top: -11px;
-	left: 200px;
+	top: -20px;
+	left: 220px;
 	transform-origin: px 80px;
 	transform: rotate(2deg);
 	z-index: 0;
@@ -123,7 +123,7 @@ body {
 	width: 40px;
 	position: absolute;
 	top: 25px;
-	left: 375px;
+	left: 415px;
 	z-index: 0;
 	transform: rotate(12deg);
 }
@@ -132,8 +132,8 @@ body {
 .car-body__light::after {
 	content: "";
 	position: absolute;
-	top: 12px;
-	left: -640px;
+	top: 22px;
+	left: -620px;
 	border: 100px solid transparent;
 	border-left: 700px solid white;
 	z-index: 2;
@@ -142,8 +142,8 @@ body {
 .car-body__light::before {
 	content: "";
 	position: absolute;
-	top: -10px;
-	left: 510px;
+	top: -7px;
+	left: 580px;
 	border: 100px solid transparent;
 	border-right: 300px solid red;
 	z-index: 2;
