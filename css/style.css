@@ -118,7 +118,7 @@ body {
 }
 .car-body__son {
 	content: "";
-	background: url("./img/son-2.png") 0 0 / cover no-repeat;
+	background: url("../img/son-2.png") 0 0 / cover no-repeat;
 	height: 140px;
 	width: 40px;
 	position: absolute;
