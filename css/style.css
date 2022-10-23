@@ -47,12 +47,12 @@ body {
 }
 .car-body__item::after {
 	content: "";
-	background: url("../img/wheel.png") 0 0 / cover no-repeat;
-	height: 120px;
-	width: 120px;
+	background: url("/img/wheel.png") 0 0 / cover no-repeat;
+	height: 135px;
+	width: 135px;
 	position: absolute;
-	top: 124px;
-	left: 64px;
+	top: 140px;
+	left: 75px;
 	z-index: 5;
 	animation-name: wheel-rotate;
 	animation-duration: 2s;
@@ -61,12 +61,12 @@ body {
 }
 .car-body__item::before {
 	content: "";
-	background: url("../img/wheel.png") 0 0 / cover no-repeat;
-	height: 120px;
-	width: 120px;
+	background: url("/img/wheel.png") 0 0 / cover no-repeat;
+	height: 135px;
+	width: 135px;
 	position: absolute;
-	top: 124px;
-	left: 528px;
+	top: 140px;
+	left: 593px;
 	z-index: 5;
 	animation-name: wheel-rotate;
 	animation-duration: 2s;
@@ -91,12 +91,12 @@ body {
 }
 .car-body__door::after {
 	content: "";
-	background: url("../img/door.png") 0 0 / cover no-repeat;
-	height: 180px;
-	width: 235px;
+	background: url("/img/door.png") 0 0 / cover no-repeat;
+	height: 205px;
+	width: 265px;
 	position: absolute;
-	top: 9px;
-	left: 230px;
+	top: 10px;
+	left: 260px;
 	z-index: 3;
 	transform: rotate(-0deg);
 }
@@ -106,24 +106,24 @@ body {
 }
 .car-body__salon {
 	content: "";
-	background: url("../img/salon.png") 0 0 / cover no-repeat;
+	background: url("/img/salon.png") 0 0 / cover no-repeat;
 	height: 250px;
 	width: 300px;
 	position: absolute;
-	top: -20px;
-	left: 220px;
+	top: -13px;
+	left: 250px;
 	transform-origin: px 80px;
 	transform: rotate(2deg);
 	z-index: 0;
 }
 .car-body__son {
 	content: "";
-	background: url("../img/son-2.png") 0 0 / cover no-repeat;
+	background: url("/img/son-2.png") 0 0 / cover no-repeat;
 	height: 140px;
 	width: 40px;
 	position: absolute;
 	top: 25px;
-	left: 415px;
+	left: 477px;
 	z-index: 0;
 	transform: rotate(12deg);
 }
@@ -132,7 +132,7 @@ body {
 .car-body__light::after {
 	content: "";
 	position: absolute;
-	top: 22px;
+	top: 33px;
 	left: -620px;
 	border: 100px solid transparent;
 	border-left: 700px solid white;
@@ -142,8 +142,8 @@ body {
 .car-body__light::before {
 	content: "";
 	position: absolute;
-	top: -7px;
-	left: 580px;
+	top: 5px;
+	left: 670px;
 	border: 100px solid transparent;
 	border-right: 300px solid red;
 	z-index: 2;
@@ -179,7 +179,7 @@ body {
 
 .car__moon::after {
 	content: "";
-	background: url("../img/moon.png") 0 0 / cover no-repeat;
+	background: url("/img/moon.png") 0 0 / cover no-repeat;
 	position: absolute;
 	left: 700px;
 	top: 50px;
@@ -190,7 +190,7 @@ body {
 }
 .car__moon::before {
 	content: "";
-	border: 100px solid rgb(194, 189, 189);
+	border: 100px solid rgb(223, 218, 218);
 	border-radius: 50%;
 	opacity: 0.4;
 	position: absolute;
