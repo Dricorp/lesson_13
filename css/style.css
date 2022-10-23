@@ -1,0 +1,263 @@
+body {
+	max-width: 1024px;
+	margin: 0 auto;
+	background-color: rgb(190, 185, 185);
+	height: 100%;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+.car {
+}
+
+.car__block {
+}
+.car-body {
+	animation-name: car-moov;
+	position: relative;
+	top: 300px;
+	left: 350px;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 2;
+}
+
+@keyframes car-moov {
+	0% {
+		transform: translate(1500px, 0);
+	}
+	100% {
+		transform: translate(-1400px, 0);
+	}
+}
+.car-body:hover {
+	animation-play-state: paused;
+}
+.car-body__item {
+}
+
+.car-body__item img {
+	position: relative;
+	width: 65%;
+	z-index: 1;
+}
+.car-body__item::after {
+	content: "";
+	background: url("/img/wheel.png") 0 0 / cover no-repeat;
+	height: 110px;
+	width: 110px;
+	position: absolute;
+	top: 110px;
+	left: 60px;
+	z-index: 5;
+	animation-name: wheel-rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.car-body__item::before {
+	content: "";
+	background: url("/img/wheel.png") 0 0 / cover no-repeat;
+	height: 110px;
+	width: 110px;
+	position: absolute;
+	top: 110px;
+	left: 475px;
+	z-index: 5;
+	animation-name: wheel-rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes wheel-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+.car-body__item:hover::before,
+.car-body__item:hover::after,
+.car-body_item {
+	animation-play-state: paused;
+}
+.car-body__door {
+}
+.car-body__door::after {
+	content: "";
+	background: url("/img/door.png") 0 0 / cover no-repeat;
+	height: 162px;
+	width: 218px;
+	position: absolute;
+	top: 8px;
+	left: 205px;
+	z-index: 3;
+	transform: rotate(-0deg);
+}
+.car-body__door:hover::after {
+	transform-origin: 0px 80px;
+	transform: rotateY(60deg);
+}
+.car-body__salon {
+	content: "";
+	background: url("/img/salon.png") 0 0 / cover no-repeat;
+	height: 200px;
+	width: 220px;
+	position: absolute;
+	top: -11px;
+	left: 200px;
+	transform-origin: px 80px;
+	transform: rotate(2deg);
+	z-index: 0;
+}
+.car-body__son {
+	content: "";
+	background: url("/img/son-2.png") 0 0 / cover no-repeat;
+	height: 140px;
+	width: 40px;
+	position: absolute;
+	top: 25px;
+	left: 375px;
+	z-index: 0;
+	transform: rotate(12deg);
+}
+.car-body__light {
+}
+.car-body__light::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: -640px;
+	border: 100px solid transparent;
+	border-left: 700px solid white;
+	z-index: 2;
+	opacity: 0.4;
+}
+.car-body__light::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 510px;
+	border: 100px solid transparent;
+	border-right: 300px solid red;
+	z-index: 2;
+	opacity: 0.1;
+}
+.car__man img {
+	width: 8%;
+	overflow: hidden;
+	position: absolute;
+	top: 310px;
+	left: 50px;
+	opacity: 0;
+	animation-name: man-gomer;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-delay: 7.5s;
+}
+@keyframes man-gomer {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.car__moon {
+}
+
+.car__moon::after {
+	content: "";
+	background: url("/img/moon.png") 0 0 / cover no-repeat;
+	position: absolute;
+	left: 700px;
+	top: 50px;
+	width: 50px;
+	height: 50px;
+	opacity: 0.7;
+	z-index: 0;
+}
+.car__moon::before {
+	content: "";
+	border: 100px solid rgb(194, 189, 189);
+	border-radius: 50%;
+	opacity: 0.4;
+	position: absolute;
+	left: 625px;
+	top: -20px;
+	z-index: ;
+}
+
+.car__text {
+}
+
+.car__title {
+	font-weight: 900;
+	font-size: 40px;
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	animation: title 1s ease 3.5s forwards;
+	opacity: 0;
+	transform: translate(0px, 50%);
+}
+@keyframes title {
+	0% {
+	}
+	100% {
+		transform: translate(0px, 0%);
+		opacity: 1;
+	}
+}
+
+.car__sub-title {
+	font-weight: 700;
+	font-size: 30px;
+	position: absolute;
+	top: 120px;
+	left: 70px;
+	animation: sub-title 1s ease 3s forwards;
+	opacity: 0;
+	transform: translate(0px, 50%);
+}
+@keyframes sub-title {
+	0% {
+	}
+	100% {
+		transform: translate(0px, 0%);
+		opacity: 1;
+	}
+}
+.car__title-text {
+	font-weight: 600;
+	font-size: 20px;
+	position: absolute;
+	top: 170px;
+	left: 70px;
+	width: 50%;
+	line-height: 1.5;
+	z-index: 0;
+	animation: text 3s ease 2.5s forwards;
+	opacity: 0;
+}
+@keyframes text {
+	0% {
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
